@@ -1,15 +1,15 @@
 {
-  "main.css": "/Hydraulicus/liquidflow/flow_animation/static/css/main.7f357b80.chunk.css",
-  "main.js": "/Hydraulicus/liquidflow/flow_animation/static/js/main.25d399f7.chunk.js",
-  "main.js.map": "/Hydraulicus/liquidflow/flow_animation/static/js/main.25d399f7.chunk.js.map",
-  "static/js/1.6544fe97.chunk.js": "/Hydraulicus/liquidflow/flow_animation/static/js/1.6544fe97.chunk.js",
-  "static/js/1.6544fe97.chunk.js.map": "/Hydraulicus/liquidflow/flow_animation/static/js/1.6544fe97.chunk.js.map",
-  "runtime~main.js": "/Hydraulicus/liquidflow/flow_animation/static/js/runtime~main.d97420ae.js",
-  "runtime~main.js.map": "/Hydraulicus/liquidflow/flow_animation/static/js/runtime~main.d97420ae.js.map",
-  "static/css/main.7f357b80.chunk.css.map": "/Hydraulicus/liquidflow/flow_animation/static/css/main.7f357b80.chunk.css.map",
-  "static/media/index.css": "/Hydraulicus/liquidflow/flow_animation/static/media/pipe_rear.c7ecf20d.svg",
-  "static/media/pipe_front.svg": "/Hydraulicus/liquidflow/flow_animation/static/media/pipe_front.476087bf.svg",
-  "index.html": "/Hydraulicus/liquidflow/flow_animation/index.html",
-  "precache-manifest.daf440194f5c1b9086ec8acb2fed7d0b.js": "/Hydraulicus/liquidflow/flow_animation/precache-manifest.daf440194f5c1b9086ec8acb2fed7d0b.js",
-  "service-worker.js": "/Hydraulicus/liquidflow/flow_animation/service-worker.js"
+  "main.css": "/liquidflow/build/static/css/main.c8ab3344.chunk.css",
+  "main.js": "/liquidflow/build/static/js/main.6942bb76.chunk.js",
+  "main.js.map": "/liquidflow/build/static/js/main.6942bb76.chunk.js.map",
+  "static/js/1.6544fe97.chunk.js": "/liquidflow/build/static/js/1.6544fe97.chunk.js",
+  "static/js/1.6544fe97.chunk.js.map": "/liquidflow/build/static/js/1.6544fe97.chunk.js.map",
+  "runtime~main.js": "/liquidflow/build/static/js/runtime~main.623e52e8.js",
+  "runtime~main.js.map": "/liquidflow/build/static/js/runtime~main.623e52e8.js.map",
+  "static/css/main.c8ab3344.chunk.css.map": "/liquidflow/build/static/css/main.c8ab3344.chunk.css.map",
+  "static/media/index.css": "/liquidflow/build/static/media/pipe_rear.c7ecf20d.svg",
+  "static/media/pipe_front.svg": "/liquidflow/build/static/media/pipe_front.476087bf.svg",
+  "index.html": "/liquidflow/build/index.html",
+  "precache-manifest.ef7106e5215356abaa186e02a22bf1d8.js": "/liquidflow/build/precache-manifest.ef7106e5215356abaa186e02a22bf1d8.js",
+  "service-worker.js": "/liquidflow/build/service-worker.js"
 }

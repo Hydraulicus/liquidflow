@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Hydraulicus/liquidflow/flow_animation/precache-manifest.daf440194f5c1b9086ec8acb2fed7d0b.js"
+  "/liquidflow/build/precache-manifest.ef7106e5215356abaa186e02a22bf1d8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Hydraulicus/liquidflow/flow_animation/index.html", {
+workbox.routing.registerNavigationRoute("/liquidflow/build/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
