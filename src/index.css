@@ -14,13 +14,30 @@ body {
   background: url(pipe_rear.svg) no-repeat center;
 }
 
-.pipe-Front {
+.pipe-front {
   width: 100%;
   height: 100%;
+  z-index: 1000;
+  pointer-events : none;
 }
 
-.flow {
+.main-flow {
+  position: absolute;
   width: 100%;
   height: 70%;
+}
+.center-flow {
   position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 25%;
+}
+
+.side-flow1 {
+  height: 10%;
+  top: 16%;
+}
+.side-flow2 {
+  height: 10%;
+  top: 74%;
 }

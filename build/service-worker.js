@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/liquidflow/build/precache-manifest.ef7106e5215356abaa186e02a22bf1d8.js"
+  "/liquidflow/build/precache-manifest.fad6b1ac180ff9e9110463473e954352.js"
 );
 
 workbox.clientsClaim();
