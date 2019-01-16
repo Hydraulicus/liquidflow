@@ -25,6 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "lodash": "^4.17.11",
     "react-particles-js": "^2.4.2"
   }
 }

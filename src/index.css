@@ -32,12 +32,22 @@ body {
   height: 50%;
   top: 25%;
 }
+.center-straight-flow {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  top: 28%;
+}
 
 .side-flow1 {
-  height: 10%;
-  top: 16%;
+  height: 15%;
+  top: 15%;
 }
 .side-flow2 {
-  height: 10%;
-  top: 74%;
+  height: 15%;
+  top: 69%;
+}
+.config-box{
+  margin: 2rem;
+  border: 2px solid blue;
 }
