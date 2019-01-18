@@ -88,13 +88,7 @@ const sideFlow = {
     "color": {
       "value": "#aaaaff"
     },
-    line_linked: {
-      "enable": true,
-      "distance": 40,
-      "color": "#99a",
-      "opacity": 1,
-      "width": 1,
-    },
+
     "move": {
       "enable": true,
       "speed": 10.5,
@@ -180,12 +174,6 @@ const centerStraightFlowOptions = {
 
 const bubbles = {
   particles: {
-    // "number": {
-    //   "value": 500,
-    //   "density": {
-    //     "enable": false,
-    //   }
-    // },
     "color": {
       "value": "#abf"
     },
@@ -218,23 +206,50 @@ const bubbles = {
     },
   }
 };
+const turbulence = {
+  particles: {
+    "color": {
+      "value": "#abf"
+    },
+    "shape": {
+      "type": "circle",
 
-
-const flowStyle = {
-  position: "absolute",
-  width: "100%",
-  height: "100%",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: `rgba(20,0,30,0.125)`
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 2,
+        "opacity_min": 0.5,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 17,
+        "size_min": 1,
+        "sync": false
+      }
+    },
+    line_linked: {
+      "enable": true,
+      "distance": 40,
+      "color": "#99a",
+      "opacity": 1,
+      "width": 1,
+    },
+  }
 };
+
 export default {
   commonFlowOptions,
   sideFlow,
   centerFlow,
   centerStraightFlowOptions,
   bubbles,
-  flowStyle
+  turbulence,
 }

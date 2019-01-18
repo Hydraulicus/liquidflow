@@ -1,0 +1,16 @@
+.pipe {
+  position: relative;
+  width: 1000px;
+  height: 501.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(pipe_rear.svg) no-repeat center;
+}
+
+.pipe-front {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  pointer-events : none;
+}

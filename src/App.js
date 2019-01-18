@@ -1,71 +1,62 @@
 import React, {Component, Fragment} from "react";
 import _ from "lodash";
-import Particles from "react-particles-js";
-import pipeFront from "./pipe_front.svg";
-import config from"./config/index.js"
+import Pipe from "./components/Pipe";
+import Flow from "./components/Flow";
+import config from "./config/index.js";
 import "./index.css";
 
 class App extends Component {
   state = {
-    type: "bubbles" // or "turbulence", or "mix"
+    // type: "bubbles" // or "turbulence", or "mix"
+    type: true // true - "bubbles",  false -  "turbulence"
+  }
+
+  clickOnChangeType = () => {
+    this.setState({type: !this.state.type})
   }
 
 
   render() {
-    const {commonFlowOptions,
+    const {
+      commonFlowOptions,
       sideFlow,
       centerFlow,
       centerStraightFlowOptions,
       bubbles,
-      flowStyle} = config;
+      turbulence,
+    } = config;
 
-    const centerFlowConfig = _.merge({}, commonFlowOptions, centerFlow, bubbles);
-    // const centerFlowConfig = {...commonFlowOptions, ...centerFlow, ...bubbles};
-    const sideFlow2Config = _.merge({}, commonFlowOptions, sideFlow, bubbles);
-// sideFlow2Config={...commonFlowOptions, ...sideFlow, ...bubbles}
-    const centerStraightFlowConfig = _.merge({}, commonFlowOptions, centerStraightFlowOptions, bubbles);
-console.log(centerStraightFlowConfig);
+    const {type} = this.state;
+    const commonConfig = type ? bubbles : turbulence;
+
+    const changableCenterOptions = _.merge(
+      {},
+      {
+        particles: {
+          number: type ? centerStraightFlowOptions.particles.number : centerFlow.particles.number,
+        }
+      }
+    );
+
+    // const centerFlowConfig = _.merge({}, commonFlowOptions, centerFlow, bubblesConfig);
+    const sideFlow2Config = _.merge({}, commonFlowOptions, sideFlow, commonConfig);
+    const centerStraightFlowConfig = _.merge({}, commonFlowOptions, centerStraightFlowOptions, changableCenterOptions, commonConfig);
+    console.dir(centerStraightFlowConfig);
     return (
       <Fragment>
-        <div className="pipe">
-          {/*<div className="main-flow">*/}
-              {/*<Particles*/}
-                {/*params={{...commonFlowOptions}}*/}
-                {/*style={{...flowStyle}}*/}
-              {/*/>*/}
-          {/*</div>*/}
-          <div className="center-flow side-flow1">
-            <Particles
-              params={sideFlow2Config}
-              style={flowStyle}
-            />
-          </div>
-          <div className="center-flow side-flow2">
-            <Particles
-              params={sideFlow2Config}
-              style={flowStyle}
-            />
-          </div>
-          {/*<div className="center-flow">*/}
-            {/*<Particles*/}
-              {/*params={centerFlowConfig}*/}
-              {/*style={flowStyle}*/}
-            {/*/>*/}
-          {/*</div>*/}
-          <div className="center-straight-flow">
-            <Particles
-              params={centerStraightFlowConfig}
-              style={flowStyle}
-            />
-          </div>
-          <img src={pipeFront} className="pipe-front"/>
-        </div>
+        <Pipe>
+          <Flow
+            // centerFlow={centerFlowConfig}
+            sideFlow={sideFlow2Config}
+            centerStraightFlow={centerStraightFlowConfig}
+          />
+        </Pipe>
         {/*<div className="config-box">*/}
-          {/*<button*/}
-            {/*onClick={ () => {}}*/}
-          {/*>*/}
-
-          {/*</button>*/}
+          <button
+            onClick={this.clickOnChangeType}
+          >
+            {type ? "Change to turbulence" : "Change to bubbles"}
+          </button>
         {/*</div>*/}
       </Fragment>
     );
