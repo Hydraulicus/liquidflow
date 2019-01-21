@@ -20,17 +20,17 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="640.5" y1="625" x2="640.5" y2="123" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0091ea"/>
+      <stop offset="0" stop-color="#0070aa"/>
       <stop offset="0.5" stop-color="#000203"/>
-      <stop offset="1" stop-color="#0091ea"/>
+      <stop offset="1" stop-color="#0070aa"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" x1="70.79" y1="374" x2="169.29" y2="374" gradientTransform="matrix(-1, 0, 0, 1, 403.75, 0)" gradientUnits="userSpaceOnUse">
       <stop offset="0"/>
-      <stop offset="1" stop-color="#0070d9"/>
+      <stop offset="1" stop-color="#0060c8"/>
     </linearGradient>
     <linearGradient id="linear-gradient-3" x1="1045.97" y1="374" x2="947.38" y2="374" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#1b1464"/>
-      <stop offset="1" stop-color="#0070d9"/>
+      <stop offset="1" stop-color="#0060c8"/>
     </linearGradient>
   </defs>
   <title>3dPipeV3</title>

@@ -1,3 +1,5 @@
+import React from "react";
+
 const commonFlowOptions = {
   particles: {
     "number": {
@@ -114,9 +116,9 @@ const centerFlow = {
         "enable": false,
       }
     },
-    "color": {
-      "value": "#aaaaff"
-    },
+    // "color": {
+    //   "value": "#aaaaff"
+    // },
     line_linked: {
       "enable": true,
       "distance": 55,
@@ -174,9 +176,6 @@ const centerStraightFlowOptions = {
 
 const bubbles = {
   particles: {
-    "color": {
-      "value": "#abf"
-    },
     "shape": {
       "type": "circle",
 
@@ -191,29 +190,13 @@ const bubbles = {
         "sync": false
       }
     },
-    "size": {
-      "value": 2.5,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 17,
-        "size_min": 1,
-        "sync": false
-      }
-    },
-    line_linked: {
-      "enable": false,
-    },
+
   }
 };
 const turbulence = {
   particles: {
-    "color": {
-      "value": "#abf"
-    },
     "shape": {
       "type": "circle",
-
     },
     "opacity": {
       "value": 1,
@@ -225,23 +208,7 @@ const turbulence = {
         "sync": false
       }
     },
-    "size": {
-      "value": 1,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 17,
-        "size_min": 1,
-        "sync": false
-      }
-    },
-    line_linked: {
-      "enable": true,
-      "distance": 40,
-      "color": "#99a",
-      "opacity": 1,
-      "width": 1,
-    },
+
   }
 };
 
@@ -253,3 +220,8 @@ export default {
   bubbles,
   turbulence,
 }
+
+export const FlowOptions = React.createContext({
+  test: "test",
+  onChange: prop => { console.log(prop) }
+});

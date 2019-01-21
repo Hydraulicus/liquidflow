@@ -12,6 +12,8 @@ span {
 
 .config-box{
   width: 42rem;
+  height: 40%;
+  overflow: auto;
   margin: 1rem;
   border: 2px solid darkblue;
   display: flex;
@@ -25,15 +27,19 @@ span {
   justify-content: center;
 }
 .flex-items{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   border: 2px solid darkblue;
-  flex: 1 1 40%;
+  flex: 1 0 40%;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 0 1rem;
   color: lightskyblue;
 }
 .disabled{
   opacity: 0.5;
   pointer-events: none;
+}
+
+.display-block {
+  display: block;
 }
