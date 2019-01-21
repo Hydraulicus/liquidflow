@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "repository": "https://hydraulicus.github.io/liquidflow",
-  "homepage": "https://hydraulicus.github.io/liquidflow",
+  "homepage": "https://hydraulicus.github.io/liquidflow/build",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
