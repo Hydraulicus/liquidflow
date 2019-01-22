@@ -19,17 +19,17 @@
       }
     </style>
     <linearGradient id="linear-gradient-4" x1="850.03" y1="374" x2="948.54" y2="374" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8999e9"/>
+      <stop offset="0" stop-color="#47f"/>
       <stop offset="1" stop-color="#0070d9"/>
     </linearGradient>
     <linearGradient id="linear-gradient-5" x1="1144.01" y1="374" x2="1045.43" y2="374" gradientTransform="matrix(-1, 0, 0, 1, 1281.05, 0)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1971e9"/>
-      <stop offset="1" stop-color="#0070d9"/>
+      <stop offset="0" stop-color="#12b"/>
+      <stop offset="1" stop-color="#006"/>
     </linearGradient>
     <linearGradient id="linear-gradient-6" x1="542.75" y1="624.82" x2="542.75" y2="123" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#004096"/>
-      <stop offset="0.5" stop-color="#359"/>
-      <stop offset="1" stop-color="#004096"/>
+      <stop offset="0" stop-color="#14a"/>
+      <stop offset="0.5" stop-color="#03c"/>
+      <stop offset="1" stop-color="#14a"/>
     </linearGradient>
   </defs>
   <g id="TOP" opacity="0.825">

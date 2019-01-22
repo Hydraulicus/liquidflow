@@ -1,4 +1,11 @@
 import React from "react";
+import _ from "lodash";
+
+/*
+ In this file are gathered the most relevant options for liquid flow visualization.
+ For more examples of options see at
+ https://vincentgarreau.com/particles.js/
+ */
 
 const commonFlowOptions = {
   particles: {
@@ -13,10 +20,6 @@ const commonFlowOptions = {
     },
     "shape": {
       "type": "circle",
-      // "stroke": {
-      //   "width": 0,
-      //   "color": "#000000"
-      // },
     },
     "opacity": {
       "value": 1,
@@ -76,152 +79,99 @@ const commonFlowOptions = {
       },
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 };
 
-const sideFlow = {
-  particles: {
-    "number": {
-      "value": 250,
-      "density": {
-        "enable": false,
-      }
-    },
-    "color": {
-      "value": "#aaaaff"
-    },
-
-    "move": {
-      "enable": true,
-      "speed": 10.5,
-      "direction": "left",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
+const centerFlowOptions = {
+    particles: {
+      "number": {
+        "value": 800,
+      },
+      "move": {
         "enable": true,
-        "rotateX": 4000,
-        "rotateY": 315
-      }
-    }
-  }
-};
-
-const centerFlow = {
-  particles: {
-    "number": {
-      "value": 400,
-      "density": {
+        "speed": 22.5,
+        "direction": "left",
+        "random": true,
+        "straight": true,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": true,
+          "rotateX": 3400,
+          "rotateY": 2315
+        }
+      },
+      "color": {
+        "value": "#abf",
+      },
+      "size": {
+        "value": 3.5,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 23,
+          "size_min": 1,
+          "sync": false
+        }
+      },
+      line_linked: {
         "enable": false,
-      }
-    },
-    // "color": {
-    //   "value": "#aaaaff"
-    // },
-    line_linked: {
-      "enable": true,
-      "distance": 55,
-      "color": "#99a",
-      "opacity": 1,
-      "width": 1,
-    },
-    "move": {
-      "enable": true,
-      "speed": 20,
-      "direction": "left",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": true,
-        "rotateX": 4000,
-        "rotateY": 315
-      }
-    }
-  }
-};
-const centerStraightFlowOptions = {
-  particles: {
-    "number": {
-      "value": 800,
-      "density": {
-        "enable": false,
-      }
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 10,
-        "color": "rgba(0,0,50,0.1)"
+        "distance": 40,
+        "color": "#99a",
+        "opacity": 1,
+        "width": 1,
       },
     },
-    "move": {
-      "enable": true,
-      "speed": 22.5,
-      "direction": "left",
-      "random": true,
-      "straight": true,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
+  };
+
+const sideFlowOptions = {
+    particles: {
+      "number": {
+        "value": 200,
+      },
+      "move": {
         "enable": true,
-        "rotateX": 3400,
-        "rotateY": 2315
-      }
-    }
-  }
-};
-
-const bubbles = {
-  particles: {
-    "shape": {
-      "type": "circle",
-
-    },
-    "opacity": {
-      "value": 1,
-      "random": false,
-      "anim": {
+        "speed": 10,
+        "direction": "left",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": true,
+          "rotateX": 3400,
+          "rotateY": 2315
+        }
+      },
+      "size": {
+        "value": 2.5,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 17,
+          "size_min": 1,
+          "sync": false
+        }
+      },
+      "color": {
+        "value": "#abf",
+      },
+      line_linked: {
         "enable": false,
-        "speed": 2,
-        "opacity_min": 0.5,
-        "sync": false
-      }
+        "distance": 10,
+        "color": "#99a",
+        "opacity": 1,
+        "width": 1,
+      },
     },
+  };
 
-  }
-};
-const turbulence = {
-  particles: {
-    "shape": {
-      "type": "circle",
-    },
-    "opacity": {
-      "value": 1,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 2,
-        "opacity_min": 0.5,
-        "sync": false
-      }
-    },
-
-  }
-};
-
-export default {
-  commonFlowOptions,
-  sideFlow,
-  centerFlow,
-  centerStraightFlowOptions,
-  bubbles,
-  turbulence,
-}
+const centerStraightFlowConfig = _.merge({}, commonFlowOptions, centerFlowOptions);
+const sideFlow2Config = _.merge({}, commonFlowOptions, sideFlowOptions);
 
 export const FlowOptions = React.createContext({
-  test: "test",
-  onChange: prop => { console.log(prop) }
+  centerStraightFlowConfig,
+  sideFlow2Config,
 });
+
+export {centerFlowOptions, sideFlowOptions,  commonFlowOptions,};

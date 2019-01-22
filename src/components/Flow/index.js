@@ -15,12 +15,6 @@ const flowStyle = {
 
 export default props => (
   <Fragment>
-    {/*<div className="main-flow">*/}
-    {/*<Particles*/}
-    {/*params={{...commonFlowOptions}}*/}
-    {/*style={{...flowStyle}}*/}
-    {/*/>*/}
-    {/*</div>*/}
     <div className="center-flow side-flow1">
       <Particles
         params={props.sideFlow}
@@ -33,12 +27,6 @@ export default props => (
         style={flowStyle}
       />
     </div>
-    {/*<div className="center-flow">*/}
-    {/*<Particles*/}
-    {/*params={centerFlowConfig}*/}
-    {/*style={flowStyle}*/}
-    {/*/>*/}
-    {/*</div>*/}
     <div className="center-straight-flow">
       <Particles
         params={props.centerStraightFlow}
